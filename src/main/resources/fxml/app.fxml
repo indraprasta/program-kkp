@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.unindra.tabungan.controllers.App"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unindra.tabungan.controllers.App">
+    <BorderPane fx:id="borderpane" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <left>
+            <VBox fx:id="sidebar" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                <JFXButton fx:id="tombol1" mnemonicParsing="false" onAction="#handleMenu" text="tombol1" />
+                <JFXButton fx:id="tombol2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleMenu" text="tombol2" />
+                <JFXButton fx:id="tombol3" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleMenu" text="tombol3" />
+                <JFXButton layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleMenu" text="tombol4" />
+            </VBox>
+        </left>
+    </BorderPane>
 </AnchorPane>
